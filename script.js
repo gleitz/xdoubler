@@ -21,7 +21,7 @@ function getEmbedCode(url) {
         }
     }
     else if (url.indexOf('youtube.com') !== -1) {
-        match = url.match(/youtube.com\/watch?v=(.+)/);
+        match = url.match(/youtube.com\/watch\?v=(.+)/);
         if (match && match.length == 2) {
             video_url = '<iframe width="425" height="355" src="http://www.youtube.com/embed/' + match[1] + '" frameborder="0" scrolling="no"></iframe>';
         }
